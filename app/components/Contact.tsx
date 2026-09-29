@@ -4,7 +4,7 @@ const details = [
   {
     emoji: "📍",
     title: "Visit Us",
-    lines: ["Retail store : Main Road, Bus Park Entrance", "Wholesale : In Front of Navajeevan Hospital", "Dhangadhi, Kailali, Nepal"],
+    lines: ["Retail : Main Road, Bus Park Entrance", "Wholesale : In Front of Navajeevan Hospital", "Dhangadhi, Kailali, Nepal"],
   },
   {
     emoji: "📞",

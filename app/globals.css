@@ -299,6 +299,47 @@ section[id] {
   border-color: var(--border) !important;
 }
 
+.social-btn {
+  --social-color: var(--brand);
+  width: 2.75rem;
+  height: 2.75rem;
+  font-size: 1.05rem;
+  line-height: 1;
+  text-decoration: none;
+  color: var(--foreground);
+  background-color: transparent;
+  border: 1px solid var(--border);
+  border-radius: 50%;
+  transition: transform 0.2s ease, background-color 0.2s ease,
+    border-color 0.2s ease, color 0.2s ease, box-shadow 0.2s ease;
+}
+
+[data-bs-theme="dark"] .social-btn {
+  color: #ffffff;
+  border-color: rgba(255, 255, 255, 0.35);
+}
+
+.social-btn:hover,
+.social-btn:focus-visible {
+  color: #ffffff;
+  background-color: var(--social-color);
+  border-color: var(--social-color);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.22);
+}
+
+.social-btn:focus-visible {
+  outline: 2px solid var(--brand);
+  outline-offset: 3px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .social-btn:hover,
+  .social-btn:focus-visible {
+    transform: none;
+  }
+}
+
 .card {
   background-color: var(--surface);
   border-color: var(--border);
